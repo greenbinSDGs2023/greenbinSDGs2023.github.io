@@ -1,0 +1,124 @@
+.card {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 0 solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+  }
+
+  .card-title {
+	margin-bottom: 0.75rem;
+  }
+
+.chat-body {
+	height: 50rem;
+}
+
+  .card-header {
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: rgba(0, 0, 0, 0.03);
+	border-bottom: 0 solid rgba(0, 0, 0, 0.125);
+  }
+  .direct-chat-messages {
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+	height: 100%;
+	overflow: auto;
+	padding: 10px;
+  }
+
+  .direct-chat-msg,
+  .direct-chat-text {
+	display: block;
+  }
+
+  .direct-chat-msg {
+	margin-bottom: 10px;
+  }
+
+  .direct-chat-msg::after {
+	display: block;
+	clear: both;
+	content: "";
+  }
+
+  .direct-chat-infos {
+	display: block;
+	font-size: 0.875rem;
+	margin-bottom: 2px;
+  }
+
+  .direct-chat-name {
+	font-weight: 600;
+  }
+
+  .direct-chat-img {
+	border-radius: 50%;
+	float: left;
+	height: 40px;
+	width: 40px;
+  }
+
+  .right .direct-chat-img {
+	float: right;
+  }
+
+
+.direct-chat-text {
+	border-radius: 0.7rem;
+	background-color: #007bff;
+	border: 1px solid #d2d6de;
+	color: #fff;
+	margin: 5px 0 0 50px;
+	padding: 5px 10px;
+	position: relative;
+	/* width: auto; */
+	max-width: 65%;
+  }
+
+  .direct-chat-text::after, .direct-chat-text::before {
+	border: solid transparent;
+	border-right-color: #d2d6de;
+	content: " ";
+	height: 0;
+	pointer-events: none;
+	position: absolute;
+	right: 100%;
+	top: 15px;
+	width: 0;
+  }
+
+  .direct-chat-text::after {
+	border-width: 5px;
+	margin-top: -5px;
+  }
+
+  .direct-chat-text::before {
+	border-width: 6px;
+	margin-top: -6px;
+  }
+
+  .right .direct-chat-text {
+	margin-left: 7rem;
+	margin-right: 50px;
+  }
+
+  .right .direct-chat-text::after, .right .direct-chat-text::before {
+	border-left-color: #d2d6de;
+	border-right-color: transparent;
+	left: 100%;
+	right: auto;
+  }
+
+  .clearfix::after {
+	display: block;
+	clear: both;
+	content: "";
+  }
