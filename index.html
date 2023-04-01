@@ -65,21 +65,19 @@
       <div id="sidebar">
         <!-- <div class="location"> -->
         <div class="d-flex align-items-center mt-5" id="location">
-          <!-- <i class="fa-solid fa-house fs-1 ms-5"></i> -->
-          <i class="fa-solid fa-house fs-5 ms-5 mb-3"></i>
-          <!-- <p class="fs-2 ms-5 d-none d-lg-block">Hankanniemi 11</p> -->
-          <p class="fs-4 ms-4 d-none d-lg-block" style="font-weight: 700;">Hankanniemi 11</p>
+          <i class="fa-solid fa-house fs-5 mb-3" style="margin-left: 1.8rem"></i>
+          <p class="fs-5 ms-2 d-none d-lg-block" style="font-weight: 700;">Hankanniemi 11</p>
         </div>
         <hr class="solid">
         <ul>
           <li class="fs-5">
             <a href="#">
               <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-sm darkgreen-btn-bg ms-5 me-3 mt-5 mb-5 fs-6"
-                  style="color: #FFFFFF; box-shadow: 0 2px 4px #6c7b71, 0 1px 3px #629474">
+                <button type="button" class="btn btn-sm darkgreen-btn-bg me-2 mt-5 mb-5 fs-6"
+                  style="color: #FFFFFF; box-shadow: 0 2px 4px #6c7b71, 0 1px 3px #629474; margin-left: 1.8rem;">
                   <i class="fas fa-tachometer-alt ms-2 me-2 mt-2 mb-2"></i>
                 </button>
-                <p class="d-none d-lg-block mb-0">Dashboard</p>
+                <p class="d-none d-lg-block mb-0" style="font-size: 1.2rem;">Dashboard</p>
                 <div class="flex-grow-1"></div>
               </div>
             </a>
@@ -87,10 +85,10 @@
           <li class="fs-5">
             <a href="./factsdata.html">
               <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-sm lightgrey-btn-bg ms-5 me-3 fs-6 elevation-1">
+                <button type="button" class="btn btn-sm lightgrey-btn-bg me-2 fs-6 elevation-1" style="margin-left: 1.8rem;">
                   <i class="fas fa-chart-bar ms-2 me-2 mt-2 mb-2"></i>
                 </button>
-                <p class="d-none d-lg-block mb-0 grey_text">Facts & Data</p>
+                <p class="d-none d-lg-block mb-0 grey_text" style="font-size: 1.2rem;">Facts & Data</p>
                 <div class="flex-grow-1"></div>
               </div>
             </a>
@@ -98,10 +96,10 @@
           <li class="fs-5">
             <a href="./ranking.html">
               <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-sm lightgrey-btn-bg ms-5 me-3 mt-5 mb-5 fs-6 elevation-1">
+                <button type="button" class="btn btn-sm lightgrey-btn-bg me-2 mt-5 mb-5 fs-6 elevation-1" style="margin-left: 1.8rem;">
                   <i class="fas fa-trophy ms-2 me-2 mt-2 mb-2"></i>
                 </button>
-                <p class="d-none d-lg-block mb-0 grey_text">Ranking</p>
+                <p class="d-none d-lg-block mb-0 grey_text" style="font-size: 1.2rem;">Ranking</p>
                 <div class="flex-grow-1"></div>
               </div>
             </a>
@@ -109,10 +107,10 @@
           <li class="fs-5">
             <a href="./tips.html">
               <div class="d-flex align-items-center">
-                <button type="button" class="btn btn-sm lightgrey-btn-bg ms-5 me-3 fs-6 elevation-1">
+                <button type="button" class="btn btn-sm lightgrey-btn-bg me-2 fs-6 elevation-1" style="margin-left: 1.8rem;">
                   <i class="fas fa-recycle ms-2 me-2 mt-2 mb-2"></i>
                 </button>
-                <p class="d-none d-lg-block mb-0 grey_text">Recycling Tips</p>
+                <p class="d-none d-lg-block mb-0 grey_text" style="font-size: 1.2rem;">Recycling Tips</p>
                 <div class="flex-grow-1"></div>
               </div>
             </a>
@@ -124,7 +122,10 @@
 
   <section class="content">
     <!-- <div class="container"> -->
-      <div class="row row_center" style="margin-top: 4rem; margin-bottom: 3rem;">
+      <h1 style="margin-left: 4rem; margin-top: 2rem;">Welcome to GreenBin!</h1>
+      <p style="margin-left: 4rem; margin-top: 0.8rem; font-size: 18px;">Sorting rate up by 4%! One step closer to our goal. Keep it up for a sustainable future!</p>
+      <img src="./icon&pic/impact.png" alt="impact" width="980" class="d-inline-block mt-4 mb-5" style="margin-left: 5.5rem;">
+      <div class="row row_center" style="margin-top: 2rem; margin-bottom: 3rem;">
         <div class="col-lg-5 d-flex mb-5 me-5">
           <div class="row small-box cost-bg elevation-1">
             <div class="inner">
@@ -182,8 +183,6 @@
             </div>
           </div>
           <div class="row chart m-auto">
-            <!-- <h3 class="fs-4">Monthly Cost of Garbage by Type</h3> -->
-            <!-- <h4 class="fs-5">(per 100 people in your community)</h4> -->
             <canvas id="line-chart"></canvas>
           </div>
         </div>
@@ -203,11 +202,10 @@
             </div>
           </div>
           <div class="row chart m-auto">
-            <!-- <h3 class="fs-4">Percentage Breakdown Excluding Mixed</h3> -->
-            <!-- <h4 class="fs-5">(Percentage Breakdown Excluding Mixed)</h4> -->
             <canvas id="ranking-curve-chart"></canvas>
           </div>
         </div>
+
       </div>
     <!-- </div> -->
   </section>
@@ -224,4 +222,5 @@
   <!-- chartjs & echarts -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
+
 </html>
